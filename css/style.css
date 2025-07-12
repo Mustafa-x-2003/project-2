@@ -1,0 +1,1092 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family:"Poppins", "Segoe UI", sans-serif;
+}
+.header{/*<!-- ========== Site Header ========== -->*/
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 80px;
+    background-color: rgba(39, 39, 39, 90%);
+    z-index: 999;
+}
+.header__icon-home{
+    position: absolute;
+    top: 50%;
+    left: 40px;
+    padding: 8  12px;
+    transform: translate(0 , -50%);
+    font-size: 24px;
+    color: #F9F3EF;
+}
+.header__search-input{
+    position: absolute;
+    top: 50%;
+    transform: translate(0 , -50%);
+    font-size: 24px;
+    border: none;
+    border-radius: 20px ;
+    left: 115px;
+    background-color: #F9F3EF;
+}
+.header__search-icon{
+    position: absolute;
+    left: 130px;
+    top: 31px;
+    font-size: 20px;
+}
+
+.header__list{
+    list-style: none;
+    float: right;
+    margin-right: 50px;
+}
+.list__item{
+    display: inline;
+    font-size: 18px;
+    font-weight: 500;
+    margin-right: 20px;  
+    position: relative;
+    line-height: 80px;
+    padding-bottom:3px ;
+}
+.dropdown{
+    position: absolute;
+    width: 180px;
+    height: 180px;
+    padding-top:25px ;
+    top: 33px;
+    right: -120px;
+    border-radius: 12px;
+    text-align: center;
+    background-color: #575555;
+    
+    visibility: hidden;
+}
+.list__dropdown:hover .dropdown{
+    visibility: visible;
+}
+
+.dropdown-item{
+    width: 130px;
+    padding-bottom:3px ;
+    line-height: normal;
+    margin-bottom: 30px;
+    position: relative;
+}
+
+.dropdown-item::after{
+    position: absolute;
+    content: "";
+    width: 0;
+    height: 3px;
+    bottom: 0;
+    left: 0;
+    background-color: #9e8259;
+    
+}
+.dropdown-item:hover::after{
+    width: 100%;
+    height: 3px;
+    transition: 0.3s;
+    
+}
+
+.list__item::after{/*<------- under line li------------->*/
+    
+    position: absolute;
+    content: "";
+
+    width: 0;
+    height: 3px;
+    bottom: 0;
+    left: 0;
+    background-color: #C9A86B;
+    opacity: 0;
+}
+.list__item:hover::after{
+
+    width: 100%;
+    height:3px;
+
+    opacity: 0.5;
+    transition: 0.5s;
+}
+
+
+.list__item a{
+    text-decoration: none;
+    color: #f3eff9;
+}
+
+/*<!-- ========== End Site Header ========== -->*/
+
+
+/* <!-- ========== Hero Section ========== --> */
+
+.hero{
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    background-image: url(../images/Rectangle\ 21.png);
+    background-size: cover;
+
+}
+.hero__overlay{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+.hero__content{
+    width: 58%;
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+}
+
+.hero__title{
+    color: #F9F3EF;
+  font-size: 60px;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 20px;
+}
+.hero__desc{
+    color: #D2C1B6;
+  font-size: 18px;
+  text-align: center;
+  width: 800px;
+  margin: 0 auto 30px;
+}
+.hero__buttons{
+    width:282px;
+    margin: auto; 
+    margin-top: 30px;  
+    position: relative;
+}
+
+.hero__button--secondary{
+    background-color: rgba(245, 222, 179, 0);
+    color: #E1E1E1;
+    border: 1px solid hsl(36, 30%, 50%);
+    padding: 14px 24px;
+    font-size: 16px;
+    border-radius: 8px;
+    cursor: pointer;
+}
+.hero__button--primary{
+    background-color: hsl(36, 30%, 50%);
+  color: #E1E1E1;
+  border: none;
+  padding: 14px 28px;
+  font-size: 16px;
+  margin-right: 6px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+.hero__button--secondary:hover{
+    opacity: 0.7;
+    
+}
+.hero__button--primary:hover{
+    opacity: 0.7;
+   
+}
+
+/*<!-- ========== End Hero Section ========== -->*/
+
+
+
+/*<!-- ========== About Section (About Us) ========== -->*/
+.about{
+    width: 100%;
+    padding: 80PX 0 180px 0;
+    background-color:#212121;
+}
+.about__title{
+    text-align: center;
+    font-size: 36px;
+    font-weight: 700;
+    text-transform: capitalize;
+    color: #D9D9D9;
+    margin-bottom: 8px;
+}
+.about__title-line{
+    width: 70px;
+    height: 4px;
+    border-radius: 4px;
+    background-color: #C9A86B;
+    margin: 0 auto 40px auto
+    
+
+}
+.about__container{
+    width: 1430.4px;
+    margin:auto;
+
+}
+.about__parent{
+    width: 1430.4px;
+    height: 300px;
+
+}
+.about__card{
+    position: relative;
+    width: 460.8px;
+    padding: 16px 24px;
+    border: 1px solid #8D8271 ;
+    border-radius: 12px;
+    float: left;
+    text-align: center;
+}
+.about__card-2{
+    margin:0 24px ;
+}
+
+.about__card::after{
+    position: absolute;
+    content: "";
+    z-index: 0;
+    width: 0;
+    height: 0;
+    
+    top: 0;
+    left: 0;
+    background-color: rgba(201, 168, 107, 0.09);
+}
+.about__card:hover::after{
+    width: 100%;
+    height: 100%;
+    transition: 0.3s;
+    border-radius: 20px;
+}
+
+
+.about__card-icon{
+    width: 40px;
+    margin: 0 auto 16px auto
+
+}
+.about__card-icon i{
+    color: hsl(36, 38%, 48%);
+    font-size: 32px;
+}
+.about__card-title{
+    position: relative;
+    font-size: 22px;
+    font-weight: 600;
+    color:#FCFCFC ;
+    z-index: 1;
+}
+.about__card:hover .about__card-title{
+ color: #d6e7f0;
+}
+.about__card-desc{
+    position: relative;
+    z-index: 1;
+    margin: 10px 0 32px 0;
+    font-size: 16px;
+    font-weight: 400;
+    color:#D9D9D9 ;
+    line-height: 1.6;
+}
+.about__carde-link a{
+    font-size: 16px;
+    font-weight: 500;
+    text-decoration: none;
+    color: hsl(36, 20%, 50%);
+    position: relative;
+    z-index: 1;
+}/*<!-- ========== END About Section (About Us) ========== -->*/
+
+
+
+/*<!-- ========== Our Projects Section (Our Projects) ========== -->*/
+.Projects{
+    width: 100%;
+    padding: 80PX 0;
+    background-color:hsl(0, 2%, 12%);
+
+}
+.Projects__title{
+    text-align: center;
+    font-size: 36px;
+    font-weight: 700;
+    text-transform: capitalize;
+    color: #D9D9D9;
+    margin-bottom: 8px;
+}
+.Projects__title-line{
+    width: 70px;
+    height: 4px;
+    border-radius: 4px;
+    background-color: #C9A86B;
+    margin: 0 auto 40px auto;
+}
+.Projects__container{
+    width: 1430.4px;
+    margin:auto;
+}
+.Projects__parent{
+    margin: 24px 0;
+    width: 1430.4px;
+    height: 300px;
+}
+.Projects__card{
+    position: relative;
+    width: 460.8px;
+    height: 300px;
+    border-radius: 10px;
+    float: left;
+    border: 1px solid #616161;
+}
+.Projects__card-2{
+    margin: 0 24px 0 24px;
+    
+    
+}
+.Projects__overlay{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    padding: 60px 24px;
+    border-radius: 10px;
+    background-color: rgba(39, 39, 39, 70%);
+    visibility: hidden;
+
+}
+.Projects__card:hover .Projects__overlay{
+
+    visibility: visible;
+}
+.Projects__card-image{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+}
+.Projects__overlay-title{
+    text-align: center;
+    text-transform: capitalize;
+    letter-spacing: 1px;
+    word-spacing: 1px;
+    color: #fcfcfc;
+    font-size: 24px;
+    font-weight: 800
+}
+.Projects__overlay-desc{
+    text-align: center;
+    margin: 16px 0 32px 0;
+    color:#D9D9D9;
+    text-transform: capitalize;
+    letter-spacing: 1px;
+    line-height: 1.6;
+    font-size: 18px;
+}
+.Projects__overlay-icon{
+    margin: auto;
+    width: 110px;
+    height: 70px;
+    text-align: center;
+
+}
+.Projects__overlay-icon a{
+    display: block;
+    float: left;
+    width: 40px;
+    height: 40px;
+    border-radius: 10px;
+
+}
+.Projects__overlay-icon i{
+ font-size: 30px;
+ line-height: 40px;
+ color: #d8d5d5;
+ cursor: pointer;
+}
+.Projects__overlay-heart{
+    margin-right:8px ;
+}
+/* <!-- ========== End Our Projects Section ========== --> */
+
+
+/* <!-- ========== Services Section (what we offer)========== --> */
+.Services{
+    width: 100%;
+    padding: 80PX 0;
+    background-color:#212121;
+}
+.services__title{
+   text-align: center;
+    font-size: 36px;
+    font-weight: 700;
+    text-transform: capitalize;
+    color: #D9D9D9;
+    margin-bottom: 8px;
+}
+.services__title-line{
+    width: 70px;
+    height: 4px;
+    border-radius: 4px;
+    background-color: #C9A86B;
+    margin: 0 auto 40px auto;
+}
+.services__container{
+    width: 1430.4px;
+    margin: 0 auto 0 auto;
+}
+.services__parent{
+    width: 100%;
+    height: 300px;    
+}
+.services__card{
+    position: relative;
+    width: 460.8px;
+    height: 300px;
+    padding: 16px 24px;
+    border: 1px solid #8D8271 ;
+    border-radius: 12px;
+    float: left;
+    
+}
+.services__card-2{
+    margin:0 24px ;
+}
+
+.services__card-title{
+    position: relative;
+    z-index: 2;
+    padding: 16px 43px 0 43px;
+    text-transform: capitalize;
+    letter-spacing: 1px;
+    word-spacing: 1px;
+    color:#fcfcfc;
+    font-weight: 700;
+    font-size: 20px;
+    
+}
+.services__card-desc{
+    position: relative;
+    z-index: 2;
+    /* text-align: center; */
+    padding: 16px 43px;
+    color: #D9D9D9;
+    font-size: 16px;
+    line-height: 1.6;
+}
+.services__card::after{
+    position: absolute;
+    content: "";
+
+    width: 0;
+    height: 0;
+
+    top: 0;
+    left: 0;
+    background-color:rgba(201, 168, 107, 0.09);
+}
+.services__card:hover::after{
+    width: 100%;
+    height: 100%;
+    transition: 0.3s;
+    border-radius: 10px;
+}
+.services__card:hover .services__card-title{
+
+    color: #d6e7f0;
+}
+.services__card-icon{
+    position: absolute;
+    left: 24px;
+    top: 30px;
+    font-size: 24px;
+    color: hsl(36, 38%, 48%) ;
+}
+/* <!-- ========== End Services Section (what we offer) ========== --> */
+
+
+/* <!-- ========== Why Choose Us Section ========== --> */
+.why-choose{
+    width: 100%;
+    padding: 60PX 0 180px 0;
+    background-color:hsl(0, 2%, 12%);
+}
+
+.why-choose__container{
+    width: 1430.4px;
+    margin:auto;
+}
+.why-choose__parent{
+    position: relative;
+    width: 100%;
+    height: 50%;
+}
+
+.why-choose__title{
+    font-size: 36px;
+    font-weight: 700;
+    text-transform: capitalize;
+    color: #D9D9D9;
+    margin: 16px 0 8px 0;
+}
+.why-choose__line{
+    width: 70px;
+    height: 4px;
+    border-radius: 4px;
+    background-color: #C9A86B;
+    margin-bottom: 16px;
+}
+.why-choose__desc{
+    padding: 24px 0;
+    color: #fcfcfc;
+    font-size: 18px;
+    line-height: 1.8;
+}
+.why-choose__icon{
+    font-size: 24px;
+    color: hsl(36, 28%, 48%);
+}
+.why-choose__parent-image{
+    position: absolute;
+    width: 550px;
+    height: 360px;
+    top: 50px;
+    right: 0;
+    border-radius: 10px;
+}
+.why-choose__parent-points{
+    position: absolute;
+    list-style: none;
+    right: 14%;
+    bottom:15PX;
+
+}
+
+.why-choose__parent-points li{
+    float: left;
+    width: 15px;
+    height: 15px;
+    background-color: #fcfcfc;
+    margin-right: 15px;
+    border-radius: 50%;
+
+}
+#why-choose__parent-point-1{
+    background-color: hsl(39, 47%, 50%);
+}
+
+ .why-choose__parent-point-2:hover{
+
+    background-color: hsl(39, 47%, 50%);
+
+
+}
+ .why-choose__parent-point-3:hover{
+
+    background-color: hsl(39, 47%, 50%);
+
+
+}
+
+/* <!-- ==========END Why Choose Us Section ========== --> */
+
+
+
+/* <!-- ========== Statistics Section ========== --> */
+.stats{
+    width: 100%;
+    background-color: #191717;
+}
+.stats__background{
+    top: -70px;
+    position: relative;
+    width: 100%;
+    height: 450px;
+    background-image: url(../images/Flux_Dev_A_softfocus_wideangle_interior_background_with_modern_0.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+}
+.stats__background-overlay{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+
+}
+.stats__parent{
+    width: 70%;
+    height: 100%;
+    overflow: auto;
+    text-align: center;
+    margin: auto;
+
+}
+
+.stats__parent-item{
+    position: relative;
+    padding: 0 10px;
+    width:25%;
+    height: 35%;
+    float: left;
+    margin:12% 0 0 0%;
+
+}
+
+.stats__parent-item i{
+    font-size: 50px;
+    color:hsl(36, 38%, 48%);
+}
+.stats__parent-item-num{
+    margin-top: 10px;
+    text-align: center;
+    font-weight: bold;
+    color: hsl(41, 11%, 77%);
+    font-size: 24px;
+}
+.stats__parent-item-desc{
+    text-align: center;
+    color: #cfcdcd;
+    font-size: 18px;
+}
+/* <!-- ========== END Statistics Section ========== --> */
+
+
+/* <!-- ========== Pricing Section ========== --> */
+.Pricing{
+    width: 100%;
+    height: 85vh;
+    background-color: #191717;
+}
+
+
+.Pricing__title{
+    text-transform: capitalize;
+    text-align: center;
+    font-size: 40px;
+    letter-spacing: 1px;
+    color: #D4D4D4;
+}
+
+.Pricing__title-line{
+    width: 70px;
+    height: 4px;
+    background-color: hsl(38, 47%, 60%);
+    margin: 7px auto 80px auto;
+}
+.Pricing__container{
+    width: 1430.4px;
+    margin: auto;
+}
+.Pricing__parent{
+    width: 100%;
+    
+}
+.Pricing__card{
+    width: 460.8px;
+    border-radius: 18px;
+    float: left;
+    border: 1px solid #8D8271;
+}
+.Pricing__card-center{
+    margin: 0 24px;
+}
+.Pricing__card-title{
+    margin: 24px;
+    text-align: center;
+    text-transform: capitalize;
+    color: #D9D9D9;
+}
+.pricing__card-desc{
+    text-align: center;
+    margin-top: 20px;
+    color: #FCFCFC;
+}
+.Pricing__card-circle{
+    width: 110px;
+    height: 110px;
+    border: 1px solid hsl(36, 30%, 50%);
+    border-radius: 50%;
+    margin:24px auto;
+}
+.Pricing__card-pric{
+    text-align: center;
+    margin-top: 40px;
+    font-size: 25px;
+    /* color: #d89939; */
+    color: hsl(36, 30%, 50%);
+}
+.pricing__card-features{
+    text-align: center;
+    margin-top: 18px;
+    color: #E1E1E1;
+    font-size: 18px;
+    line-height: 1;
+    letter-spacing: 1;
+    word-spacing: 1;
+}
+.Pricing__card-btn{
+    background-color: hsl(36, 30%, 50%);
+    color: #E1E1E1;
+    border: none;
+    padding: 14px 28px;
+    text-transform: capitalize;
+    font-size: 16px;
+    display: block;
+    margin:32px auto ;
+    border-radius: 8px;
+    cursor: pointer;
+}
+.Pricing__card-btn:hover{
+    opacity: 0.6;
+}
+
+/* <!-- ========== END Pricing Section ========== --> */
+
+
+/* <!-- ========== What Our Clients Say Section ========== --> */
+.testimonials{
+    width: 100%;
+    background-color: #191717;
+}
+.testimonials__background{
+    position: relative;
+    width: 100%;
+    height: 380px;
+    background-image: url(../images/Flux_Dev_A_softfocus_wideangle_interior_background_with_modern_0.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+}
+.testimonials__background-overlay{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+
+}
+.testimonials__parent{
+    position: relative;
+    width: 80%;
+    overflow: auto;
+    margin:0 auto;
+    text-transform: capitalize;
+    word-spacing: 1px;
+    margin: 20px auto 0 auto;
+}
+.testimonials__item{
+    position: relative;
+    width: 50%;
+    float: left;
+    padding: 16px 0 16px 17%;
+}
+
+.testimonials__image{
+    position: absolute;
+    top: 80px;
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+}
+.testimonials__name{
+    margin:80px 0 0 110px;
+    width: 200px;
+    font-size: 20px;
+    color: hsl(36, 19%, 50%);
+    font-weight: 700;
+}
+.testimonials__job{
+    margin:8px 0 48PX 110px;
+    color: hsl(0, 0%, 75%);
+    font-size: 16px;
+    font-weight: 500;
+}
+.testimonials__coment{
+    word-spacing: 0px;
+    font-size: 18px;
+    color: hsl(41, 11%, 77%);
+    width: 380PX;
+}
+/* <!-- ==========  END Statistics Section ========== --> */
+
+
+/* <!-- ============= Team Section ============= --> */
+.Team{
+    width: 100%;
+    padding: 80PX 0 124px 0;
+    background-color: #191717;
+}
+.team__title{
+    text-transform: capitalize;
+    text-align: center;
+    font-size: 40px;
+    letter-spacing: 1px;
+    color: #D9D9D9;
+}
+
+.team__title-line{
+    width: 70px;
+    height: 4px;
+    background-color: #C9A66B;
+    margin: 16px auto 77px auto;
+}
+.Team__container{
+    width: 1430.4px;
+    margin:auto;
+}
+.Team__parent{
+    width: 100%;
+    overflow: auto;
+}
+.team__card{
+    position: relative;
+    width: 460.8px;
+    padding: 24px 32px;
+    text-align: center;
+    border:1px solid #616161;
+    border-radius: 15px;
+    float: left;
+}
+
+.team__card::after{
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 0;
+    top: 0;
+    left: 0;
+    background-color: rgba(201, 168, 107, 0.09);
+    border-radius: 10px;
+}
+.team__card:hover::after{
+    width: 100%;
+    height: 100%;
+    transition: 0.3s;
+}
+.team__card-2{
+    margin: 0 24px;
+}
+.team__card-image{
+    position: relative;
+    margin: auto;
+    width: 100%;
+    height: 260px;
+}
+.team__card-image img{
+    width: 100%;
+    height: 100%;
+    border-radius: 8px;
+}
+.team__card-icon{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    border-radius: 2px;
+    background-color: rgba(0, 0, 0, 0.45);
+    visibility: hidden;
+    z-index: 1;
+}
+.team__card:hover .team__card-icon{
+    visibility: visible;
+}
+
+.team__card-icon a{
+    display: block;
+    width: 36px; 
+    height: 36px;
+    background-color: #9e8259;
+    margin-left: auto ;
+    font-size: 18px;
+}
+.team__card-icon a i{
+    line-height: 40px;
+    color: #FFFFFF	;
+}
+.team__card-name{
+    text-transform: capitalize;
+    margin: 32px 0 16 0;
+    color: #ffffff;
+    font-size: 22px;
+     position: relative;
+    z-index: 1;
+}
+.team__card-job{
+    text-transform: capitalize;
+    font-size: 18px;
+    color: #d9d9d9;
+     position: relative;
+    z-index: 1;
+}
+/* <!-- ============= END Team Section ============= --> */
+
+
+
+/* <!-- ============= Blog news Section ============= --> */
+.Blog{
+    width: 100%;
+    padding: 64px 0 80px;
+    background-color: hsl(0, 2%, 12%);
+}
+.Blog__title{
+    text-align: center;
+    font-size: 36px;
+    font-weight: 700;
+    text-transform: capitalize;
+    color: #D9D9D9;
+    margin-bottom: 8px;
+}
+.Blog__title-line{
+    width: 70px;
+    height: 4px;
+    border-radius: 4px;
+    background-color: hsl(39, 47%, 60%);
+    margin: 0 auto 40px auto
+    
+
+}
+.Blog__container{
+    width: 1430.4px;
+    margin:auto;
+}
+.Blog__parent{
+    width: 100%;
+    overflow: auto;
+}
+.Blog__card{
+    position: relative;
+    width: 460.8px;
+    padding: 16px 24px;
+    text-align: center;
+    border: 1px solid #8D8271 ;
+    border-radius: 10px;
+    float: left;
+}
+.Blog__card::after{
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 0;
+    top: 0;
+    left: 0;
+    background-color: rgba(201, 168, 107, 0.09);
+    border-radius: 10px;
+}
+.Blog__card:hover::after{
+    width: 100%;
+    height: 100%;
+    transition: 0.4s;
+}
+.Blog__card-2{
+    margin: 0 24px;
+}
+.Blog__card-image{
+    position: relative;
+    margin: auto;
+    width: 90%;
+    height: 270px
+}
+.Blog__card-image img{
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+}
+.blog__meta{
+    width: 300px;
+    height: 40px;
+    list-style: none;
+    margin:4px auto 0 auto;
+    position: relative;
+    z-index: 1;
+    color:hsl(41, 13%, 72%);
+}
+.blog__meta-item i{
+    line-height: 40px;
+    color: #B0BEC5;
+    padding-right:8px;
+    font-size: 20px;
+}
+
+.blog__meta-item{                           
+    width: 30%;
+    float: left;
+}
+
+.blog__meta-item-2{
+    margin: 0 5%;
+}
+
+.Blog__job{
+    position: relative;
+    z-index: 1;
+    margin: 8px 0;
+    text-transform: capitalize;
+    color: hsl(0, 0%, 75%);
+}
+.Blog__desc{
+    position: relative;
+    z-index: 1;
+    color: #fcfcfc;
+    margin-bottom: 32px;
+    color: hsl(0, 0%, 75%);
+}
+.blog__read-more{
+    text-decoration: none;
+    position: absolute;
+    z-index: 1;
+    left: 50%;
+    bottom: 16px;
+    transform: translate(-50% , 0);
+    color: hsl(36, 20%, 50%);
+    text-transform: capitalize;
+}
+/* <!-- ============= END Blog news Section ============= --> */
+
+
+/* <!-- ==========  footer Section ========== --> */
+.footer{
+    padding: 40px 0 32PX 0;
+    background-color: #1A1A1A;
+}
+.footer__image{
+    display: block;
+    width: 460.8px;
+    height: 300px;
+    margin: auto;
+    border-radius: 15px;
+}
+.footer__icon{
+    width: 450px;
+    margin: auto;
+    border:1px solid #00000000;
+}
+.footer__icon a{  
+    width: 60px;
+    height: 60px;
+    font-size: 24px;
+    border-radius: 50%;
+    margin: 16px 0 0 13px;
+    background-color:hsl(0, 0%, 15%) ;
+    text-decoration: none;
+    text-align: center;
+    display: block;
+    float: left;
+}
+.footer__icon i{
+    line-height: 60px;
+    color: #B0BEC5;
+}
+.footer__copy{
+    margin: 90px 24px 0 24px;
+    color: hsl(0, 0%, 59%);
+    text-align: center;
+}
+
+/* <!-- ========== END footer Section ========== --> */
